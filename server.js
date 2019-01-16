@@ -20,6 +20,7 @@ app.get('/pokemon', (req,res)=>{
 
 // show each pokemon by ID at show.ejs
 app.get('/pokemon/:id', (req,res)=>{
+    console.log(req.params.id);
     //res.send('You are on the pokemon by id page');
     res.render('show.ejs', {
         Pokemon: Pokemon,

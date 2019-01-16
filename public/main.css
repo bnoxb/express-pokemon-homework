@@ -1,6 +1,12 @@
 body {
-    background: lightblue;
+    background: linear-gradient(#0541CA, #CA050B) center center no-repeat fixed;
+    background-size: auto;
     font-family: 'Coiny', cursive;
+    text-align: center;
+    color: black;
+}
+a:visited {
+    color: black;
 }
 li {
     font-size: 30px;
