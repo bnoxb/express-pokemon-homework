@@ -10,13 +10,7 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <ul class="pokemon">
-        
-        <%for(let i = 0; i < Pokemon.length; i++) {%>
-            <li><a href="http://localhost:3000/pokemon/<%=i%>"><%=Pokemon[i].name%></a></li>
-        <%}%>
-
-
-    </ul>
+    <h1><%=thisPokemon.name%></h1>
+    <img src="<%=thisPokemon.img%>">
 </body>
 </html>
