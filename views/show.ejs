@@ -11,6 +11,10 @@
 </head>
 <body>
     <h1><%=thisPokemon.name%></h1>
-    <img src="<%=thisPokemon.img%>">
+    <img src="<%=thisPokemon.img%>"><br>
+    <form action="/pokemon/<%=id%>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%=thisPokemon.name%></button>
+    </form>
+    <a href="/pokemon"><button type="submit">Go Back to Your Pokemon</button></a>
 </body>
 </html>

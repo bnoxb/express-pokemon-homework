@@ -11,12 +11,16 @@
 </head>
 <body>
     <ul class="pokemon">
-        
+        <h1>Your Pokemon</h1>
         <%for(let i = 0; i < Pokemon.length; i++) {%>
             <li><a href="http://localhost:3000/pokemon/<%=i%>"><%=Pokemon[i].name%></a></li>
+            <a href="/pokemon/<%=i%>/edit"><button type="submit">Edit <%=Pokemon[i].name%></button></a>
+            <form action="/pokemon/<%=i%>?_method=DELETE" method="POST">
+                <button type="submit">Delete <%=Pokemon[i].name%></button>
+            </form>
         <%}%>
-
-
+        
     </ul>
+    <a href="/pokemon/new"><button type="submit">Add New Pokemon</button></a>
 </body>
 </html>
