@@ -8,6 +8,7 @@ const Pokemon = require('./models/pokemon.js');
 
 // middleware
 app.use(express.static('public'));
+// morgan
 app.use(morgan('short'));
 
 // main pokemon list page at index.ejs
